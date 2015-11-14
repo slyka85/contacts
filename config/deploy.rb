@@ -2,7 +2,13 @@
 lock '3.4.0'
 
 set :application, 'contacts'
-set :repo_url, 'git@example.com:me/my_repo.git'
+set :repo_url, 'git@github.com:slyka85/contacts.git'
+
+set :user, "rails"
+set :stages, %w(production)
+
+set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids',
+'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system')
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
