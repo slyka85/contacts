@@ -32,9 +32,9 @@
 # Feel free to add new variables to customise your setup.
 
 
-role :app, %w{deploy@192.241.189.246}
-role :web, %w{deploy@192.241.189.246}
-role :db, %w{deploy@192.241.189.246}, :primary => true
+role :app, %w{rails@192.241.189.246}
+role :web, %w{rails@192.241.189.246}
+role :db, %w{rails@192.241.189.246}, :primary => true
 set :branch, "master"
 set :rails_env, "production"
 set :deploy_to, "/var/www/contacts_production"
